@@ -1,11 +1,11 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: test-app
+  name: backstage-demo
+  annotations:
+    github.com/project-slug: kartverket/backstage-demo
 spec:
-  type: service
-  lifecycle: production
   owner: guests
+  type: other
   system: examples
-  providesApis:
-    - example-grpc-api
+  lifecycle: unknown
