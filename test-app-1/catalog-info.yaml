@@ -5,7 +5,5 @@ metadata:
   annotations:
     github.com/project-slug: kartverket/backstage-demo
 spec:
-  owner: guests
   type: other
-  system: examples
   lifecycle: unknown
