@@ -1,0 +1,30 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: test-app
+relations:
+  - type: ownedBy
+    targetRef: group:default/guests
+    target:
+      kind: group
+      namespace: default
+      name: guests
+  - type: partOf
+    targetRef: system:default/examples
+    target:
+      kind: system
+      namespace: default
+      name: examples
+  - type: providesApi
+    targetRef: api:default/example-grpc-api
+    target:
+      kind: api
+      namespace: default
+      name: example-grpc-api
+spec:
+  type: service
+  lifecycle: production
+  owner: guests
+  system: examples
+  providesApis:
+    - example-grpc-api
