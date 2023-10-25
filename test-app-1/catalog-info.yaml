@@ -4,6 +4,8 @@ metadata:
   name: backstage-demo
   annotations:
     github.com/project-slug: kartverket/backstage-demo
+  labels:
+    impact-assessment: A
 spec:
   owner: guests
   type: other
