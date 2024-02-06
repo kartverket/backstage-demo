@@ -4,7 +4,7 @@ metadata:
   name: backstage-demo-2
   annotations:
     github.com/project-slug: kartverket/backstage-demo
-    backstage.io/kubernetes-id: test
+    backstage.io/kubernetes-label-selector: 'app=skiperator'
 spec:
   owner: guests
   type: other
