@@ -5,6 +5,9 @@ metadata:
   annotations:
     github.com/project-slug: kartverket/backstage-demo
     backstage.io/kubernetes-label-selector: 'app=skiperator'
+    grafana/alert-label-selector: "source=skiperator"
+    grafana/dashboard-selector: "'skiperator'"
+    grafana/overview-dashboard: 'https://monitoring.kartverket.dev/d/b48615bc-3801-4d0b-be37-858483dfb3d3/skiperator?orgId=1&kiosk'
 spec:
   owner: guests
   type: other
